@@ -1,0 +1,315 @@
+@media ( max-width:1200px)	
+	.menu
+		&_item
+			padding-right: 12px
+		&_link
+			font-size: 14px	
+			color: #FFFFFF 
+		&_off
+			font-size: 12px				
+	.promo
+		&_co
+			font-size: 50px
+		&_driver
+			font-size: 27px					
+	.mobile
+		&_item
+			width: 230px
+			height: 260px
+		.mobile_item_subtitle
+			font-size: 15px	
+	.world
+		&_world
+			font-size: 26px
+		&_your
+			font-size: 14px				
+	.footer_link_main a 
+		margin: 0 10px
+		font-size: 14px
+	.footer_link_sub a 
+		margin: 0 5px
+		font-size: 9px
+		line-height: 30px
+
+@media ( max-width: 991px)	
+	.menu
+		&_item
+			padding-right: 10px
+		&_link
+			font-size: 10px
+	.sub_header
+		&_logo
+			width: 100%
+		&_telephone
+			font-size: 18px	
+		&_btn
+			margin-top: 18px
+			width: 100%			
+	.reasons
+		&_block
+			flex-direction: column
+			align-items: center
+		&_descr
+			margin-top: 20px
+			width: 300px
+		&_ellipses
+			margin-right: 0px	
+	.reason_text
+		font-size: 35px		
+	.footer_wrapper
+		flex-direction: column
+		align-items: center
+	.footer_wrapper >div
+		width: 45%	
+	.one-social		
+		display: none
+	.two-social		
+		display: flex	
+		justify-content: center
+		align-items: center
+		margin-bottom: 20px
+	.footer_mobile
+		display: flex
+		justify-content: center	
+		margin: 0 auto
+		img
+			margin: 0 5px
+	.footer_link_main a 
+		font-size: 13px
+
+@media ( max-width: 767px)	
+	.menu	
+		position: fixed
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		top: 0
+		left: -100%
+		width: 60%
+		height: 100vh
+		padding: 20px 15px
+		transition: 0.5s all
+		background-color: rgba(0,0,0,.8 )
+		&_active
+			left: 0
+		&_item
+			margin: 10px 0
+			padding-right: 0
+			border: none
+		&_link
+			font-size: 20px	
+	.hamburger
+		display: block
+		position: absolute
+		top: 50%
+		right: 10px
+		width: 26px
+		height: 12px
+		transform: translateY(-50%)
+		span
+			display: block
+			width: 100%
+			height: 2px
+			transition: 0.6s all
+			margin-bottom: 2px
+			background-color:$text_color
+		&_active
+			span
+				margin-bottom: -2px
+				&:nth-child(1)
+					transform: translateY(3px)	rotate(-45deg)
+				&:nth-child(2)	
+					display: none
+				&:nth-child(3)
+					transform: translateY(3px)	rotate(45deg)
+	.sub_header	
+		&_telephone
+			text-align: center
+			font-size: 20px
+		&_btn
+			display: block
+			margin: 0 auto
+			width: 75%	
+	.promo
+		&_co
+			font-size: 37px
+			line-height: 20px
+		&_driver
+			font-size: 23px
+			line-height: 20px
+		&_text	
+			font-size: 18px
+			line-height: 25px	
+	.reasons
+		&_block
+			margin-top: 30px
+		.reason_text	
+			font-size: 27px	
+	.car
+		&_png
+			max-width: 100%
+			height: auto
+			// object-fit: cover
+	.reason_car
+		font-size: 35px	
+	.reason_cartitle
+		font-size: 12px					
+	.xs-hidden	
+		display: none	
+	.xs-visible
+		display: block	
+@media ( max-width: 575px)	
+	nav
+		height: 32px	
+	.menu
+		width: 80%
+		&_item
+			width: 100%
+			text-align: center
+		&_link
+			font-size: 18px		
+	.sub_header
+		top: 30px
+		height: 62px
+		&_off
+			display: none
+		&_telephone
+			font-style: normal
+			font-weight: 400
+			font-size: 12px
+			color: #FFFFFF
+		&_btn
+			display: block
+			margin: -7px auto
+			font-size: 9px
+			width: 110px
+			height: 25px
+	.promo
+		padding: 102px 0
+		height: 400px
+		&_co
+			margin-top: 10px
+			font-style: normal
+			font-weight: 900
+			font-size: 30px
+			line-height: 35px
+			text-align: center
+			text-transform: uppercase
+			color: #FFFFFF
+		&_driver
+			margin: 0 auto
+			font-style: normal
+			font-weight: 900
+			font-size: 20px
+			line-height: 30px
+		&_text
+			display: none
+		&_btn
+			display: block
+			margin: 0 auto
+			margin-top: 72px
+			font-style: normal
+			font-weight: 400
+			font-size: 16px
+			align-items: center
+			text-align: center
+			text-transform: uppercase
+			color: #FFFFFF
+			width: 210px
+			height: 50px	
+	.reasons
+		padding: 25px 0
+		&_block
+			margin-top: 24px
+		&_descr
+			text-align: center
+			width: 100%
+		.reason_text
+			margin: 0 auto
+			margin-top: 15px
+			font-size: 16px
+	.mobile
+		&_title
+			font-size: 16px
+		&_text
+			font-size: 14px
+		&_item
+			width: 275px
+			height: 254px			
+	.car
+		height: 393px
+		padding: 25px 0
+		&:before
+			display: none
+		&_png
+			display: block
+			margin:-35px auto
+			width: 300px
+			height: 190px	
+		&_descr
+			display: block
+			margin: 0 auto	
+			margin-top: 170px
+			line-height: 20px
+			min-width: 250px
+		&_subtitle
+			font-style: normal
+			font-weight: 300
+			font-size: 17px
+			color: #FFFFFF	
+		&_subtetx
+			font-style: normal
+			font-weight: 300
+			font-size: 17px
+			color: #FFFFFF
+		.reason_car
+			display: none
+		.reason_cartitle
+			display: none	
+	.require
+		padding: 25px 0	
+		&_block
+			margin-top: 22px
+			margin: 0 auto	
+		.reason_text
+			margin: 0 auto
+			margin-top: 14px
+			font-size: 16px	
+	.world
+		height: 360px
+		padding: 24px 0		
+		&_world
+			margin: 0 auto
+			margin-top: 14px
+			font-size: 16px	
+		&_your
+			font-size: 14px
+		&_cities
+			margin-top: 200px
+			font-size: 15px
+			font-weight: 400
+			font-style: normal	
+	footer
+		.footer_line
+			width: 255px
+			height: 6px		
+		.footer_wrapper >div
+			width: auto		
+		.footer_link_main a 
+			font-size: 11px
+		.footer_link_sub a 
+			font-size: 8px
+					
+
+
+
+
+
+
+
+
+
+
+
+
+

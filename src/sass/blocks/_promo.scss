@@ -1,0 +1,38 @@
+.promo{
+
+	min-height: 100vh;
+	background: url('../img/website.jpg') no-repeat 20%/cover;
+	padding-top: 205px;
+	&__title{
+		width: 532px;
+		
+	}
+	&__subtitle {
+		color: #ffffff;
+        position: relative;
+        padding-left: 10px;
+        z-index: 2;
+        @include circle;
+		&:hover{
+			color: rgb(0, 255, 89);
+		}
+		
+    }
+	&_buttons	{
+		display: flex;
+		margin-top: 25px;
+		align-items:center;
+		justify-content:space-between;
+		width: 230px;
+	}
+	&__link{
+		font-size: 14px;
+		font-weight: bold;
+		color: #ffffff;
+		&:hover{
+			color: #ffffff;
+			text-decoration: none;
+		}
+		
+	}
+}

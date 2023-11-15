@@ -1,0 +1,53 @@
+.advantagets	{
+	min-height: 475px;
+	padding: 73px;
+	background: #F6F6F6;
+	&__wrapper	{
+		display: flex;
+	}
+	
+	&__item	{
+		display: flex;
+		justify-content: space-between;
+		text-align: center;
+		margin-top: 40px;
+		width: 922px
+		}
+
+	&__descr	{
+		margin-top: 40px;
+		width: 256px;
+	}	
+	&__title	{
+		font-size: 18px;
+		font-weight: 700;
+		text-align: center;
+		color: #0D0D0D;
+	}
+	&__subtitle	{
+		margin-top: 26px;
+		font-size: 14px;
+		font-weight: 300;
+		font-style: normal;
+		text-align: center;
+		color: #0D0D0D;
+		a	{
+			text-decoration: none;
+			color:$main-color;
+		}
+	}
+	&__icon	{
+		&_animation {
+			animation-name:heartbeat;
+			animation-duration: 1.5s;
+			animation-timing-function:steps(15, end);
+			animation-iteration-count:infinite;
+			&:hover	{
+				animation-play-state:paused
+			}
+
+		}
+	}
+	
+		
+}

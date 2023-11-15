@@ -1,0 +1,48 @@
+.sideplanet{
+	display: flex;
+	flex-direction: column;
+	align-items:center;
+	justify-content: space-between;
+	position: fixed;
+	top: 230px;
+	left: 50px;
+	height: 340px;
+	&__divider{
+		width: 2px;
+		height: 70px;	
+		background-color:#000000;
+		&:hover{
+			background-color:$main-color;
+		}
+	}
+	&__text	{
+		font-size: 16px;
+		font-weight: bold;
+		height: 150px;
+		width: 25px;
+		&:hover{
+			color:$main-color;
+			transition: all 0.5s;
+			transform: scale(1.15);
+		}
+		span {
+			display: block;
+			transform: rotate(-90deg) translate(-60px, -260%);
+			width:150px;
+
+		}
+	}
+	&__links{
+		&:hover{
+			&:hover{
+				transition: all 0.5s;
+				transform: scale(1.25);
+
+			}
+			svg path{
+				fill:$main-color;
+				
+			}
+		}
+	}
+}
